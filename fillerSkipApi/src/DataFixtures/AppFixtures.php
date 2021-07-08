@@ -11,7 +11,7 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $fillerList = new Filler();
-        $fillerList->setAnimeName('naruto');
+        $fillerList->setNetflixId(70205012);
         $fillerList->setEpisodes(serialize([1,2,3,4,5,6,7]));
 
         $manager->persist($fillerList);

@@ -18,40 +18,40 @@ class Filler
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="integer", length=255)
      */
-    private $AnimeName;
+    private $netflixId;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string")
      */
-    private $Episodes;
+    private $episodes;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getAnimeName(): ?string
+    public function getNetflixId(): ?int
     {
-        return $this->AnimeName;
+        return $this->netflixId;
     }
 
-    public function setAnimeName(string $AnimeName): self
+    public function setNetflixId(string $netflixId): self
     {
-        $this->AnimeName = $AnimeName;
+        $this->netflixId = $netflixId;
 
         return $this;
     }
 
     public function getEpisodes(): ?string
     {
-        return $this->Episodes;
+        return $this->episodes;
     }
 
-    public function setEpisodes(string $Episodes): self
+    public function setEpisodes(string $episodes): self
     {
-        $this->Episodes = $Episodes;
+        $this->episodes = $episodes;
 
         return $this;
     }

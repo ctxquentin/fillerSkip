@@ -1,8 +1,1 @@
 # config/routes.yaml
-
-filler_list:
-  path: /filler/listfiller
-  controller: App\Controller\FillerController::listFiller
-add_filler_list:
-  path: /filler/addfillerlist
-  controller: App\Controller\FillerController::insertFillerList
