@@ -1,0 +1,11 @@
+
+###> symfony/framework-bundle ###
+/fillerSkipApi/.env.local
+/fillerSkipApi/.env.local.php
+/fillerSkipApi/.env.*.local
+/fillerSkipApi/config/secrets/prod/prod.decrypt.private.php
+/fillerSkipApi/public/bundles/
+/fillerSkipApi/var/
+/fillerSkipApi/vendor/
+./.idea
+###< symfony/framework-bundle ###
