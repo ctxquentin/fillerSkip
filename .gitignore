@@ -7,5 +7,5 @@
 /fillerSkipApi/public/bundles/
 /fillerSkipApi/var/
 /fillerSkipApi/vendor/
-./.idea
+.idea
 ###< symfony/framework-bundle ###
