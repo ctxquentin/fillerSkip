@@ -32,12 +32,12 @@ class FillerController extends AbstractController
 
     }
 
-    public function insertFillerList(){
+    public function insertFillerList($netflix_id, $episodes){
 
         $entityManager = $this->getDoctrine()->getManager();
         $fillerList = new Filler();
-        $fillerList->setAnimeName('naruto');
-        $fillerList->setEpisodes(json_encode([12,22,34,55]));
+        $fillerList->setNetflixId($netflix_id);
+        $fillerList->setEpisodes(serialize($episodes));
 
         $entityManager->persist($fillerList);
 
