@@ -21,7 +21,7 @@ class FillerController extends AbstractController
      */
     public function listFiller(string $netflix_id): Response{
         $fillerRepo = $this->em->getRepository(Filler::class);
-        $fillers = $fillerRepo->findOneBy(['NetflixId' => $netflix_id]);
+        $fillers = $fillerRepo->findOneBy(['netflixId' => $netflix_id]);
         $episodeList = $fillers->getEpisodes();
 
         $response = new Response();
