@@ -1,0 +1,17 @@
+{
+
+    "manifest_version": 2,
+    "name": "fillerSkip",
+    "version": "1.0",
+  
+    "description": "Alert you when you start watching an anime filler on netlix, and propose you to skip it",
+  
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.netflix.com/*"],
+        "js": ["fillerSkip.js"]
+      }
+    ]
+  
+  }
